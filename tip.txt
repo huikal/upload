@@ -1,0 +1,121 @@
+kyh01@PC MINGW64 /c
+$ mkdir github-git
+
+kyh01@PC MINGW64 /c
+$ mkdir git-for-study
+
+kyh01@PC MINGW64 /c
+$ cd git-for-study/
+
+kyh01@PC MINGW64 /c/git-for-study
+$ git init -b main
+Initialized empty Git repository in C:/git-for-study/.git/
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ ls
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ ls -al
+total 12
+drwxr-xr-x 1 kyh01 197609 0 Jun 26 11:32 ./
+drwxr-xr-x 1 kyh01 197609 0 Jun 26 11:30 ../
+drwxr-xr-x 1 kyh01 197609 0 Jun 26 11:32 .git/
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git config --global user.name
+Kim Yoon Hyung
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git config core.editor
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git --system core.editor
+unknown option: --system
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git config --global user.name
+Kim Yoon Hyung
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git config --global core.editor
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git config --system core.editor
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git config --global user.email "kyh0106855@gmail.com"
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git config --global color.ui auto
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git config --global color.ui white
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git config --global color.ui auto
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git commit -m "first commit"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git branch -M main
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git remote add origin https://github.com/huikal/2024_git_study.git
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ ls
+step1.txt
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git commit -m "first commit"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        step1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git add step1.txt
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ ls
+step1.txt
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git commit -m "first commit"
+[main (root-commit) b03ba61] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 step1.txt
+
+kyh01@PC MINGW64 /c/git-for-study (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 258 bytes | 258.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/huikal/2024_git_study.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.

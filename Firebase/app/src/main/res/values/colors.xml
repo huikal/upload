@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorAccent">#43CB44</color>
+    <color name="colorDisabled">#B0B0B0</color>
+    <color name="colorAction">#8BC34A</color> <!-- 예시 색상 -->
+    <color name="your_button_color">#009688</color> <!-- 버튼 색상 예시 -->
+    <color name="your_button2_color">#4CAF50</color> <!-- 버튼 색상 예시 -->
+    <color name="your_button3_color">#33691E</color> <!-- 버튼 색상 예시 -->
+
+</resources>

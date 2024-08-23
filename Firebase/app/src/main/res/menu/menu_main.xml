@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 두 번째 메뉴 항목: 검색 -->
+    <item
+        android:id="@+id/menu_main_search"
+        android:title="home_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_main_auth"
+        android:title="인증"
+        android:icon="@drawable/account"
+        app:showAsAction="always"/>
+
+</menu>

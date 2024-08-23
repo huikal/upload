@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Testfirebase" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- 상태 바 색상 지정 -->
+        <item name="android:statusBarColor">@color/colorAccent</item>
+
+        <!-- 버튼 색상 지정 -->
+        <item name="android:buttonStyle">@style/CustomButton</item>
+    </style>
+
+    <style name="ToolbarIconColor" parent="Base.Theme.Testfirebase"/>
+    <style name="Theme.Testfirebase" parent="Base.Theme.Testfirebase" />
+
+    <!-- 커스텀 버튼 스타일 -->
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/your_button_color</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

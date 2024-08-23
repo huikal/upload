@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>결제 완료</title>
+    <style media="screen">
+      body {
+        background: #eceff1;
+        color: rgba(0, 0, 0, 0.87);
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #message {
+        background: white;
+        max-width: 360px;
+        margin: 100px auto 16px;
+        padding: 32px 24px;
+        border-radius: 3px;
+      }
+      #message h2 {
+        color: #4caf50;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+      #message h1 {
+        font-size: 22px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.6);
+        margin: 0 0 16px;
+      }
+      #message p {
+        line-height: 140%;
+        margin: 16px 0 24px;
+        font-size: 14px;
+      }
+      #message,
+      #message a {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+      @media (max-width: 600px) {
+        body,
+        #message {
+          margin-top: 0;
+          background: white;
+          box-shadow: none;
+        }
+        body {
+          border-top: 16px solid #4caf50;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>결제 완료</h2>
+      <h1>결제가 성공적으로 처리되었습니다!</h1>
+      <p>결제가 완료되었습니다.</p>
+      <p>저희 서비스를 이용해 주셔서 감사합니다.</p>
+      <p>이제 새로운 기능을 확인하거나 다른 작업을 진행해 주세요.</p>
+      <p id="productInfo"></p>
+    </div>
+
+    <script>
+      // URL에서 쿼리 파라미터 추출
+      const urlParams = new URLSearchParams(window.location.search);
+      const productName = urlParams.get("productName");
+      const productPrice = urlParams.get("productPrice");
+
+      // 결제 정보를 HTML에 삽입
+      document.getElementById(
+        "productInfo"
+      ).textContent = `상품명: ${decodeURIComponent(
+        productName
+      )}, 가격: ${decodeURIComponent(productPrice)}원`;
+    </script>
+  </body>
+</html>
